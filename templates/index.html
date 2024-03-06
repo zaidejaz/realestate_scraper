@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Search</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            width: 300px;
+            background-color: #fff; /* white form background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* slight shadow */
+        }
+        label {
+            color: #000; /* black label text */
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ffa500; /* orange border for input */
+            border-radius: 5px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #ffa500; /* orange border color on focus */
+            box-shadow: 0 0 5px #ffa500; /* orange shadow on focus */
+        }
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0 5px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffa500; /* orange submit button */
+            color: #fff; /* white text color */
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #cc6600; /* lighter orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/">
+        <label for="api">ScrapeakAPI:</label><br>
+        <input type="text" id="api_url" name="api"><br> <!-- Input field for API URL -->
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
