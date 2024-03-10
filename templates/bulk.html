@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload CSV File</title>
+  <style>
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Form container styles */
+    .form-container {
+      width: 70%; /* Adjusted width */
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Form label styles */
+    .form-label {
+      font-size: 18px;
+      color: #333333;
+    }
+
+    /* File input styles */
+    #file {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* API Key input styles */
+    #api {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Submit button styles */
+    .submit-btn {
+      background-color: #f26522;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #d35400;
+    }
+
+    /* Link styles */
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #f26522;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form method="post" enctype="multipart/form-data">
+      <label for="file" class="form-label">Upload CSV File:</label><br>
+      <input type="file" id="file" name="file"><br>
+      <label for="api" class="form-label">API Key:</label><br>
+      <input type="text" id="api" name="api"><br>
+      <input type="submit" value="Submit" class="submit-btn">
+    </form>
+  </div>
+</body>
+</html>
